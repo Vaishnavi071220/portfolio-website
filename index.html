@@ -67,59 +67,82 @@ Let’s connect and collaborate!</p>
                     </div>
                 </section>             
 
-
- <!-- Skills Section with Gradient Cards and AOS Slide-In Animation -->
-<section id="Skills" style="background-color: #f9fafe; padding: 40px 0;">
+<!-- Skills Section -->
+<section id="Skills" style="background-color: #f9fafe; padding: 30px 0;">
   <div class="section-heading text-center">
-    <h2 style="color: darkblue; font-size: 28px; font-weight: 700;">Technical Skills</h2>
+    <h2 style="color: darkblue; font-size: 24px; font-weight: 700; margin-bottom: 20px;">Technical Skills</h2>
   </div>
 
-  <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 900px; margin: auto;">
-    
-    <!-- Card 1 -->
-    <div data-aos="slide-up" style="background: linear-gradient(135deg, #f9fafe, #eef2fb); padding: 20px 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
-      <h4 style="margin-bottom: 10px; color: #2c3e50;">Data Science & Machine Learning</h4>
-      <p style="line-height: 1.6; color: #444;">Statistical Analysis, Predictive Modeling, Hyperparameter Tuning, Model Optimization, LLM Eval, Supervised & Unsupervised Learning, Deep Learning, Reinforcement Learning, Data Science Pipelines, NLP, RAG pipelines, Generative AI</p>
+  <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 12px; max-width: 900px; margin: auto;">
+
+    <!-- Reusable Card Style -->
+    <style>
+      .skill-card {
+        background: linear-gradient(135deg, #f9fafe, #eef2fb);
+        padding: 14px 18px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      }
+
+      .skill-card h4 {
+        margin-bottom: 6px;
+        font-size: 15px;
+        color: #2c3e50;
+      }
+
+      .skill-card p {
+        font-size: 13.5px;
+        line-height: 1.4;
+        margin: 0;
+        color: #444;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+
+    <!-- Cards -->
+    <div class="skill-card" data-aos="slide-up">
+      <h4>Data Science & Machine Learning</h4>
+      <p>Statistical Analysis, Predictive Modeling, Hyperparameter Tuning, Model Optimization, LLM Eval, Supervised & Unsupervised Learning, Deep Learning, Reinforcement Learning, Data Science Pipelines, NLP, RAG pipelines, Generative AI</p>
     </div>
 
-    <!-- Card 2 -->
-    <div data-aos="slide-up" style="background: linear-gradient(135deg, #f9fafe, #eef2fb); padding: 20px 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
-      <h4 style="margin-bottom: 10px; color: #2c3e50;">Programming & Tools</h4>
-      <p style="line-height: 1.6; color: #444;">Python, C#, Java, C, .Net/.Net Core, SQL, Ansys HFSS, HTML, PyTorch, TensorFlow, Spark, Hugging Face, Git, Linux, OpenCV, MATLAB</p>
+    <div class="skill-card" data-aos="slide-up">
+      <h4>Programming & Tools</h4>
+      <p>Python, C#, Java, C, .Net/.Net Core, SQL, Ansys HFSS, HTML, PyTorch, TensorFlow, Spark, Hugging Face, Git, Linux, OpenCV, MATLAB</p>
     </div>
 
-    <!-- Card 3 -->
-    <div data-aos="slide-up" style="background: linear-gradient(135deg, #f9fafe, #eef2fb); padding: 20px 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
-      <h4 style="margin-bottom: 10px; color: #2c3e50;">Data Engineering & Visualization</h4>
-      <p style="line-height: 1.6; color: #444;">Apache Spark, MySQL, MongoDB, Databricks, REST APIs, Excel, Power BI, Canva, Matplotlib, Seaborn</p>
+    <div class="skill-card" data-aos="slide-up">
+      <h4>Data Engineering & Visualization</h4>
+      <p>Apache Spark, MySQL, MongoDB, Databricks, REST APIs, Excel, Power BI, Canva, Matplotlib, Seaborn</p>
     </div>
 
-    <!-- Card 4 -->
-    <div data-aos="slide-up" style="background: linear-gradient(135deg, #f9fafe, #eef2fb); padding: 20px 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
-      <h4 style="margin-bottom: 10px; color: #2c3e50;">Cloud Platforms & MLOps</h4>
-      <p style="line-height: 1.6; color: #444;">AWS, Azure ML, Azure DevOps, Git, GitHub, Model Deployment, CI/CD for ML systems</p>
+    <div class="skill-card" data-aos="slide-up">
+      <h4>Cloud Platforms & MLOps</h4>
+      <p>AWS, Azure ML, Azure DevOps, Git, GitHub, Model Deployment, CI/CD for ML systems</p>
     </div>
 
-    <!-- Card 5 -->
-    <div data-aos="slide-up" style="background: linear-gradient(135deg, #f9fafe, #eef2fb); padding: 20px 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
-      <h4 style="margin-bottom: 10px; color: #2c3e50;">Pretrained Models, NLP & LLMs</h4>
-      <p style="line-height: 1.6; color: #444;">LLaMA, GPT-series, T5, Unet, Attention U-NET, Mask RCNN, Xception, Hybrid Models, Transformers (BERT, GPT), Hugging Face</p>
+    <div class="skill-card" data-aos="slide-up">
+      <h4>Pretrained Models, NLP & LLMs</h4>
+      <p>LLaMA, GPT-series, T5, Unet, Attention U-NET, Mask RCNN, Xception, Hybrid Models, Transformers (BERT, GPT), Hugging Face</p>
     </div>
 
-    <!-- Card 6 -->
-    <div data-aos="slide-up" style="background: linear-gradient(135deg, #f9fafe, #eef2fb); padding: 20px 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
-      <h4 style="margin-bottom: 10px; color: #2c3e50;">Computer Vision & DL</h4>
-      <p style="line-height: 1.6; color: #444;">YOLO, VGG16, ResNet, ViTs, EfficientNet, Object Detection, Segmentation, Classification</p>
+    <div class="skill-card" data-aos="slide-up">
+      <h4>Computer Vision & DL</h4>
+      <p>YOLO, VGG16, ResNet, ViTs, EfficientNet, Object Detection, Segmentation, Classification</p>
     </div>
 
-    <!-- Card 7 -->
-    <div data-aos="slide-up" style="background: linear-gradient(135deg, #f9fafe, #eef2fb); padding: 20px 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
-      <h4 style="margin-bottom: 10px; color: #2c3e50;">Data & AI Product Management</h4>
-      <p style="line-height: 1.6; color: #444;">Business Planning, Product Lifecycle Management, Cross-functional Collaboration, Agile & Scrum, Strategic Thinking, Technical Documentation, Data-Driven Decision-Making, R&D, Problem Solving, Continuous Learning & Innovation</p>
+    <div class="skill-card" data-aos="slide-up">
+      <h4>Data & AI Product Management</h4>
+      <p>Business Planning, Product Lifecycle Management, Cross-functional Collaboration, Agile & Scrum, Strategic Thinking, Technical Documentation, Data-Driven Decision-Making, R&D, Problem Solving, Continuous Learning & Innovation</p>
     </div>
 
   </div>
 </section>
+
 <!--Skills Section Ends Here-->
                     
 <!-- Experience Section -->
@@ -516,11 +539,11 @@ Achieved high classification accuracy with strong generalization across MRI data
                     </header>
                     <ul>
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#resume">Resume</a></li>
                         <li><a href="#Skills">Technical Skills</a></li>
                         <li><a href="#Professional Experience">Professional Experience</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#Publication">Publications</a></li>
+                        <li><a href="#resume">Resume</a></li>
                         <li><a href="#projects">Featured Projects</a></li>
                         <li><a href="#talks-achievements">Talks & Achievements</a></li>
                         <li><a href="#contact">Contact</a></li>
